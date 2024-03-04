@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.12.0.0",
-  "projectVersion": "1.0.163239391",
+  "projectVersion": "1.0.163269173",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -45,12 +45,6 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "bbcff760-f324-423a-a616-f011318914de",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyCommentsTestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "3175fe2d-d584-4010-b263-92e12bbb4368",
         "testCaseType": "TestCase",
         "fileName": "Test Cases\\VerifyNavigationTestCase.xaml"
@@ -60,24 +54,6 @@
         "testCaseId": "7ce11cd2-4bfb-4c1e-a07f-394b432d9dfd",
         "testCaseType": "TestCase",
         "fileName": "Test Cases\\VerifyNegativeTestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b2dd5f7a-45d5-481d-a486-5602080bdc46",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyPostiveTestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "38858226-d973-41d2-ab0b-0a8e59b31793",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyStatusTestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0380d745-89ac-4f4b-9d0a-a03eb94a56cb",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyVisbileTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
@@ -120,6 +96,30 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Workflows\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bbcff760-f324-423a-a616-f011318914de",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\VerifyCommentsAfterStatusChange.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b2dd5f7a-45d5-481d-a486-5602080bdc46",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\VerifyStatusUpdate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "38858226-d973-41d2-ab0b-0a8e59b31793",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\VerifyStatusAfterUpdation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0380d745-89ac-4f4b-9d0a-a03eb94a56cb",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\VerifyVisbileOfWork_ItemUpdateButton.xaml"
       }
     ],
     "modernBehavior": false,

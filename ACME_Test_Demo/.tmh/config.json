@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/accelirateuipcl/accelirateorchcloud/testmanager_",
+  "defaultProject": {
+    "id": "39d3532a-2830-0000-55c7-0b46846ff58c",
+    "name": "ACME_Test_Demo",
+    "key": "ACME"
+  }
 }
