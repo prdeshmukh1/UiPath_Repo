@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.12.0.0",
-  "projectVersion": "1.0.163269173",
+  "projectVersion": "1.0.163423534",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -45,81 +45,40 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "3175fe2d-d584-4010-b263-92e12bbb4368",
+        "testCaseId": "450416ed-15c0-42df-97bf-a7a95734fe00",
         "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyNavigationTestCase.xaml"
+        "fileName": "Functional Test Cases\\Verify_Date_WithAndWithoutUpdate.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "7ce11cd2-4bfb-4c1e-a07f-394b432d9dfd",
+        "testCaseId": "6f9ad4ec-0d42-41d3-945a-042b7f50f3c9",
         "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyNegativeTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "fe315e80-9527-4284-8a65-40416f388e8e",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\GetTransactionDataTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "664778fe-2a69-43a2-b0f7-e99ce56dd4fc",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\InitAllApplicationsTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "4b47f389-2e27-401b-a18a-d4372f1abba2",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\InitAllSettingsTestCase.xaml"
+        "fileName": "Functional Test Cases\\Verify_Failed_Excecution.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "92ebf21e-62b1-4cd4-9e58-33d682a5545f",
+        "testCaseId": "766aeaf3-5ab7-4cac-85d9-b9b3591f8c0b",
         "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\MainTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "1583392f-ef40-4f9f-bd9d-04a2d9c483ee",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\ProcessTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "af387125-5289-460f-b1fb-59fecf48eb2b",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Workflows\\WorkflowTestCaseTemplate.xaml"
+        "fileName": "Functional Test Cases\\Verify_Status_WithAndWithoutUpdate.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "bbcff760-f324-423a-a616-f011318914de",
+        "testCaseId": "7f66edb4-95f0-4683-80fe-7ff45f9175d0",
         "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyCommentsAfterStatusChange.xaml"
+        "fileName": "Functional Test Cases\\Verify_Type_WithAndWithoutUpdate.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "b2dd5f7a-45d5-481d-a486-5602080bdc46",
+        "testCaseId": "09c21df6-9fac-4e50-a3ec-749cd1f9d268",
         "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyStatusUpdate.xaml"
+        "fileName": "Functional Test Cases\\Verify_VisbilityOf_UpdateButton.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "38858226-d973-41d2-ab0b-0a8e59b31793",
+        "testCaseId": "f7fe2c70-0b1d-42d4-8d72-12b342411ddc",
         "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyStatusAfterUpdation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0380d745-89ac-4f4b-9d0a-a03eb94a56cb",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\VerifyVisbileOfWork_ItemUpdateButton.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Generate_Queue_Items.xaml"
       }
     ],
     "modernBehavior": false,

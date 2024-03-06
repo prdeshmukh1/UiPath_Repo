@@ -1,17 +1,17 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="WIID_Action" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="WIID_Action" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_Trasactionitem" Type="InArgument(ui:QueueItem)" />
-    <x:Property Name="In_Negative_Flag" Type="InArgument(x:Boolean)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_GetTextstatusupdate" Type="OutArgument(x:String)" />
     <x:Property Name="out_gettextstatus" Type="OutArgument(x:String)" />
     <x:Property Name="out_Visbilityitem" Type="OutArgument(x:Int32)" />
     <x:Property Name="out_Navigationflag" Type="OutArgument(x:Int32)" />
+    <x:Property Name="In_Reject_Flag" Type="InArgument(x:Boolean)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1210.6666666666667,5163.333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1210.6666666666667,5508</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>WIID_Action_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -52,6 +52,7 @@
       <x:String>System.Text.RegularExpressions</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -111,20 +112,20 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Performing all test cases:&#xA;&#xA;1. Positive Test Case&#xA;2. Negative Test Case&#xA;3. Status Test Case&#xA;4. Comment Test Case&#xA;5. Navigation Test Case&#xA;6. Visibility Test Case" DisplayName="WIID_Action" sap:VirtualizedContainerService.HintSize="1220.6666666666667,5098.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Performing all test cases:&#xA;&#xA;1. Positive Test Case&#xA;2. Negative Test Case&#xA;3. Status Test Case&#xA;4. Comment Test Case&#xA;5. Navigation Test Case&#xA;6. Visibility Test Case" DisplayName="WIID_Action" sap:VirtualizedContainerService.HintSize="1220.6666666666667,5443.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use  Bower  - Open the WIID line items" sap:VirtualizedContainerService.HintSize="1158.6666666666667,4842.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use  Bower  - Open the WIID line items" sap:VirtualizedContainerService.HintSize="1158.6666666666667,5187.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1124.6666666666667,4623.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1124.6666666666667,4968" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="refer" />
             </Sequence.Variables>
@@ -142,11 +143,10 @@
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message - Navigating to the line item URL" sap:VirtualizedContainerService.HintSize="1062.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---Navigating to the line item URL -&quot;]" />
-            <uix:NGoToUrl DisplayName="Go To URL - WIID Line Items" sap:VirtualizedContainerService.HintSize="1062.6666666666667,84.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_Config(&quot;Acmelineitemupdatelink&quot;).tostring.Trim+In_Trasactionitem.SpecificContent.GetValueOrDefault(&quot;WIID&quot;).ToString]" Version="V3" />
             <ui:LogMessage DisplayName="Log Message - Work Item Is Visbile Or Nor" sap:VirtualizedContainerService.HintSize="1062.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---Work Item Is Visbile Or Nor -&quot;]" />
-            <uix:NCheckState DisplayName="App State - Workitem is Visble Or Not" sap:VirtualizedContainerService.HintSize="1062.6666666666667,3882.6666666666665" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Timeout="30" Version="V3">
+            <uix:NCheckState DisplayName="App State - Workitem is Visble Or Not" sap:VirtualizedContainerService.HintSize="1062.6666666666667,4352" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Timeout="45" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558.6666666666666,3661.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558.6666666666666,4130.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -154,21 +154,21 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message - Work Item Is Visbile " sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---Work Item Is Visbile -&quot;]" />
                   <ui:LogMessage DisplayName="Log Message - Negative Remark Sceanrio Enabled Or Not" sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---Negative Remark Sceanrio Enabled Or Not -&quot;]" />
-                  <Switch x:TypeArguments="x:Boolean" DisplayName="Switch - Updating The Rejected Status" Expression="[In_Negative_Flag]" sap:VirtualizedContainerService.HintSize="496.6666666666667,938" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                  <Switch x:TypeArguments="x:Boolean" DisplayName="Switch - Updating The Rejected Status" Expression="[In_Reject_Flag]" sap:VirtualizedContainerService.HintSize="496.6666666666667,940.6666666666666" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence x:Key="True" sap:VirtualizedContainerService.HintSize="450,722.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence x:Key="True" sap:VirtualizedContainerService.HintSize="450,725.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message - Negative Remark Sceanrio Enabled Or Not" sap:VirtualizedContainerService.HintSize="388,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---Negative Remark Sceanrio Enabled  -&quot;]" />
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Add Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Text="Rejected" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Add Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Text="Reject The  Line Item" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/98557428" CvElementArea="114, 535, 1630, 83" CvType="InputBox" DesignTimeRectangle="121, 538, 1618, 80" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA newComment'" FullSelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' type='text' class='form-control' aaname='' /&gt;" Guid="bceb9dc0-c842-469d-8830-92d5e0059cc6" InformativeScreenshot="cc6334401671a374e0f2dbf2336b512f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -199,7 +199,7 @@
                         </uix:NSelectItem.Target>
                       </uix:NSelectItem>
                     </Sequence>
-                    <Sequence x:Key="False" sap:VirtualizedContainerService.HintSize="450,722.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence x:Key="False" sap:VirtualizedContainerService.HintSize="450,725.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -239,17 +239,37 @@
                     </Sequence>
                   </Switch>
                   <ui:LogMessage DisplayName="Log Message - Cling On Update Work Item" sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;--- Cling On Update Work Item -&quot;]" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Update Work Item'" sap:VirtualizedContainerService.HintSize="496.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DelayBefore="3" DisplayName="Click 'Update Work Item'" sap:VirtualizedContainerService.HintSize="496.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/98557428" CvTextArea="165, 763, 170, 22" CvTextArgument="Update Work Item" CvType="Text" DesignTimeRectangle="121, 750, 234, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Update Work Item'" FullSelectorArgument="&lt;webctrl id='buttonUpdate' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buttonUpdate' tag='BUTTON' type='button' class='btn btn-default' aaname=' Update Work Item' check:innerText='Update Work Item' /&gt;" Guid="c1e28765-b236-4c1b-b7e3-146e39cd0897" InformativeScreenshot="5dec00b74b41dd5123e6b99b8188b91b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
                   <ui:LogMessage DisplayName="Log Message - Cling On Sucessfull popup" sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;--- Cling On Sucessfull popup -&quot;]" />
-                  <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="496.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="1154, 227, 96, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="0343bb23-b40c-4dd4-8454-16255ae9752d" ImageBase64="" InformativeScreenshot="e5adc7ae127d716f31c202fe140d2159.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496.6666666666667,391.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch.Try>
+                      <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="1187, 201, 96, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="7250c201-f335-4069-8e5a-2ba99908c317" InformativeScreenshot="f7c15dca6888875eee68b6deb96ab336.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,218" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Bot Unable To Click Success Popup From ACME Website -&quot;+exception.Message]" />
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
                   <uix:NGetText DisplayName="Get Text 'WIID: 98557512'" sap:VirtualizedContainerService.HintSize="496.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" TextString="[Out_getTextStatus]" Version="V3">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/98557512" DesignTimeRectangle="121, 268, 1618, 150" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'WIID: 98557512'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              98557512                              Research Client Check Copy                              Completed                              2017-08-16                              Done! Completed                         ' /&gt;" Guid="f0ca39f1-9650-4860-abf2-246ef6bab0a3" InformativeScreenshot="4a42f2efb70faa70776e8adbbf7f0e61.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
@@ -257,11 +277,31 @@
                   </uix:NGetText>
                   <ui:LogMessage DisplayName="Log Message - Extrating The Update Status" sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---  Extrating The Update Status -&quot;+Out_getTextStatus]" />
                   <uix:NGoToUrl DisplayName="Go To URL - Updated URL" sap:VirtualizedContainerService.HintSize="496.6666666666667,84.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[in_Config(&quot;Acmelineitemupdatelink&quot;).tostring.Trim+In_Trasactionitem.SpecificContent.GetValueOrDefault(&quot;WIID&quot;).ToString]" Version="V3" />
-                  <uix:NGetText DelayBefore="3" DisplayName="Get Text 'WIID: 98557580'" sap:VirtualizedContainerService.HintSize="496.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" TextString="[Out_getTextStatusUpdate]" Version="V3">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/98557580" DesignTimeRectangle="121, 335, 1618, 150" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'WIID: 98557580'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              98557580                              Verify Account Position                              Completed                              2019-03-13                              Done! Completed                         ' /&gt;" Guid="ccbcb8d0-df6e-4818-8d94-9e33552ed33a" InformativeScreenshot="662cf8c30e39ecec0c0b2de28f87b01d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
-                    </uix:NGetText.Target>
-                  </uix:NGetText>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496.6666666666667,391.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <uix:NGetText DelayBefore="3" DisplayName="Get Text 'WIID: 98557580'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" TextString="[Out_getTextStatusUpdate]" Timeout="60" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/98557580" DesignTimeRectangle="121, 335, 1618, 150" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'WIID: 98557580'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              98557580                              Verify Account Position                              Completed                              2019-03-13                              Done! Completed                         ' /&gt;" Guid="ccbcb8d0-df6e-4818-8d94-9e33552ed33a" InformativeScreenshot="662cf8c30e39ecec0c0b2de28f87b01d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,218" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;While Refreshing The Screen ACME Website Is Not Responding Properly -&quot;+exception.Message]" />
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
                   <ui:LogMessage DisplayName="Log Message - Extrating The Update Status" sap:VirtualizedContainerService.HintSize="496.6666666666667,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[In_Config(&quot;Process Name&quot;).tostring +&quot;---  Extrating The Update Status  2-&quot;+Out_getTextStatusUpdate]" />
                   <uix:NGetAttributeGeneric x:TypeArguments="uix:NVisibilityLevel" Attribute="visibility" DisplayName="Get Attribute 'Update Work Item' - Visbile" sap:VirtualizedContainerService.HintSize="496.6666666666667,211.33333333333334" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_7" Result="[out_Visbilityitem]" ScopeIdentifier="d8c2cabc-feb3-463a-996c-dad46b65d754" Version="V3">
                     <uix:NGetAttributeGeneric.Target>
@@ -303,7 +343,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASJSURBVFhHvZdtbFNlFMePblYqvkYTRFyCLOrQhC9CjB80KCqaiCF80C+CRhIZClHJ3AsDt+6FjnbttIyXzRfI3NiYZIm46AcDm4XRN9a1XStu6waL2dgq2xhTTJZtj/9zy23vZltZafnwb/Pc3uf5/3ruec55LtEeZz90FRq/xWLPiwwgQipltYfHCRfWZg/lNXyMhQaac4LybYJ22ZOjfBbWZ4gyyXOEAcZJiwF+XHvM31jlubwx79fBzJw4Jc/NahnM3GkOisfZrYOZWuvw+ztODRRTCSJRJEV6NAjARJ/bxYamC2sAQFiEMCkuyXMBQDCXxGMAEAAIAKTa2wE/h8AfVwAUOcRL9f7tyQb42j2yPJUBCucC4MLrjb0fJQpgaHJm2crKzrbVDf4qHssAVc7LT0QFWJsgACHEQyllLkEfmgVtMYtdbUMnZACjbTg6wBvfhwHS9nur1Tq3EzvD+UpjrymSGWvFN7+bqeic416D25NS4tzMc1svXdtEm1sEVXgEfdKGjO8QMkC5LRAdYN3xMIBa77pGhdiWORax8khXIJI5a0mlV1CuRVAx7tW0H74OQOlfnRe07bSkpt5xzbwB7jN6LFSMrbLTJp6r7T4ZyZy17KBvStrbKDIPfOEpUADQ7paBDbnWwFMACOXAoVg5MAvA4LEpAFoimbMAMMP3MMBCvbtwDgABgIb/nr5NBqh2jSQPQFXWEQJYesAn1Hgsd+k6BPKpQgao8YwmGOCQb1oGUCsicI/RLegz5AZKsErn0skAdd7EA4QioATAvxa0G7Ufze1hU2ehDFCbaID0KACP8u5gANT9RV/GAXC/8YYBIj6CuADeVAAs2OuyS10LW2xVTfepSOasjGrfpASgxb2lTs1NASgrIZLIiwonKNsi1jT4f45kzko7EDZaaHDrbwrghaP+EMC7P/WfoE/PCso6K56t6xmMZM5K1SHb0copxypMzsBWGeCRfXEAPF8bBjjsG90ilVJuKngMXVcnH5trPiPECsqzcgmWttvFvyYXywCLTJ3zB3i5YRYAqcthnodF+OYCh8g/fek9vT2QUf/b2PLc1oFs4l5RgrnbzohnaruvAECaGysCNbEAXlO0YwZo/mNiK71zEhmO3zkfEGZVOULO4ywUGT5DsskHZjE2LV5VAqRxDvCjQR1YbPIW3FAEIgDQ28397bQDufAx2ipP4s7HB0xEhK+rNA6x8ZcBHQBICUBamGw/IyUxorRfBqj3zR+AmvsmVr3V1PfjgzqXuBu1PRX9fYnRM7Hphwvf9f8zpYJoLsCLR3uupO/rnHqyyidW1/mzZYAjnhjNKAYAAYAAQAAgABAACADE5lEACAAEAAJAqB0fdMYAwJEsdChNFsC3rpGMqAA4lK67BQB0Jx7jf4/lyOb1x/tKj50fW1phDzytt86WDjJAZZYhaWyIcM//qdL55+M66/D6VE5QJC+8JYDgqxkgUvDDAiTa7fjmMCVad0C0B+LaEXwdlF7NggN+V+PXJd5eTJcMyWvLnix89ECjUECS9vp3MjR7bXg6u/4FPqMYP5QOgtAAAAAASUVORK5CYII=" InformativeScreenshot="ddd91ce160828ef265fa616dcab49d85.jpg" Selector="&lt;html app='msedge.exe' url='edge://newtab/' /&gt;" Title="ACME System 1 - Work Items" Url="[in_Config(&quot;edgeTab&quot;).tostring.Trim]" />
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASJSURBVFhHvZdtbFNlFMePblYqvkYTRFyCLOrQhC9CjB80KCqaiCF80C+CRhIZClHJ3AsDt+6FjnbttIyXzRfI3NiYZIm46AcDm4XRN9a1XStu6waL2dgq2xhTTJZtj/9zy23vZltZafnwb/Pc3uf5/3ruec55LtEeZz90FRq/xWLPiwwgQipltYfHCRfWZg/lNXyMhQaac4LybYJ22ZOjfBbWZ4gyyXOEAcZJiwF+XHvM31jlubwx79fBzJw4Jc/NahnM3GkOisfZrYOZWuvw+ztODRRTCSJRJEV6NAjARJ/bxYamC2sAQFiEMCkuyXMBQDCXxGMAEAAIAKTa2wE/h8AfVwAUOcRL9f7tyQb42j2yPJUBCucC4MLrjb0fJQpgaHJm2crKzrbVDf4qHssAVc7LT0QFWJsgACHEQyllLkEfmgVtMYtdbUMnZACjbTg6wBvfhwHS9nur1Tq3EzvD+UpjrymSGWvFN7+bqeic416D25NS4tzMc1svXdtEm1sEVXgEfdKGjO8QMkC5LRAdYN3xMIBa77pGhdiWORax8khXIJI5a0mlV1CuRVAx7tW0H74OQOlfnRe07bSkpt5xzbwB7jN6LFSMrbLTJp6r7T4ZyZy17KBvStrbKDIPfOEpUADQ7paBDbnWwFMACOXAoVg5MAvA4LEpAFoimbMAMMP3MMBCvbtwDgABgIb/nr5NBqh2jSQPQFXWEQJYesAn1Hgsd+k6BPKpQgao8YwmGOCQb1oGUCsicI/RLegz5AZKsErn0skAdd7EA4QioATAvxa0G7Ufze1hU2ehDFCbaID0KACP8u5gANT9RV/GAXC/8YYBIj6CuADeVAAs2OuyS10LW2xVTfepSOasjGrfpASgxb2lTs1NASgrIZLIiwonKNsi1jT4f45kzko7EDZaaHDrbwrghaP+EMC7P/WfoE/PCso6K56t6xmMZM5K1SHb0copxypMzsBWGeCRfXEAPF8bBjjsG90ilVJuKngMXVcnH5trPiPECsqzcgmWttvFvyYXywCLTJ3zB3i5YRYAqcthnodF+OYCh8g/fek9vT2QUf/b2PLc1oFs4l5RgrnbzohnaruvAECaGysCNbEAXlO0YwZo/mNiK71zEhmO3zkfEGZVOULO4ywUGT5DsskHZjE2LV5VAqRxDvCjQR1YbPIW3FAEIgDQ28397bQDufAx2ipP4s7HB0xEhK+rNA6x8ZcBHQBICUBamGw/IyUxorRfBqj3zR+AmvsmVr3V1PfjgzqXuBu1PRX9fYnRM7Hphwvf9f8zpYJoLsCLR3uupO/rnHqyyidW1/mzZYAjnhjNKAYAAYAAQAAgABAACADE5lEACAAEAAJAqB0fdMYAwJEsdChNFsC3rpGMqAA4lK67BQB0Jx7jf4/lyOb1x/tKj50fW1phDzytt86WDjJAZZYhaWyIcM//qdL55+M66/D6VE5QJC+8JYDgqxkgUvDDAiTa7fjmMCVad0C0B+LaEXwdlF7NggN+V+PXJd5eTJcMyWvLnix89ECjUECS9vp3MjR7bXg6u/4FPqMYP5QOgtAAAAAASUVORK5CYII=" InformativeScreenshot="ddd91ce160828ef265fa616dcab49d85.jpg" Selector="&lt;html app='msedge.exe' url='edge://newtab/' /&gt;" Title="ACME System 1 - Work Items" Url="[in_Config(&quot;Acmelineitemupdatelink&quot;).tostring.Trim+In_Trasactionitem.SpecificContent.GetValueOrDefault(&quot;WIID&quot;).ToString]" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

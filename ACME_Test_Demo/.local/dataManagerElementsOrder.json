@@ -60,7 +60,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Test Cases/VerifyCommentsTestCase.xaml",
+      "Path": "Test Cases/VerifyCommentsAfterStatusChange.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "Config&Sequence_1",
@@ -77,6 +77,95 @@
       "Path": "Framework/CloseAllApplications.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Cases/VerifyNavigationTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "getTextStatus&Sequence_1",
+        "int_Visibile_Item&Sequence_1",
+        "int_Navigationflagprocess&Sequence_1",
+        "int_Navigationflaginit&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Cases/VerifyStatusUpdate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "str_getTextStatus&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/WIID_Action.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "refer&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Trasactionitem",
+        "In_Negative_Flag",
+        "in_Config",
+        "out_GetTextstatusupdate",
+        "out_gettextstatus",
+        "out_Visbilityitem",
+        "out_Navigationflag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Cases/VerifyNegativeTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "str_getTextStatus&Sequence_1",
+        "NegativeFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Cases/VerifyStatusAfterUpdation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "str_getTextStatus&Sequence_1",
+        "str_getTextStatusUpdate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Cases/VerifyVisbileOfWork_ItemUpdateButton.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "getTextStatus&Sequence_1",
+        "int_VisibileItem&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
