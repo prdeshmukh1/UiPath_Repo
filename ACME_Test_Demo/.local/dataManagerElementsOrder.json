@@ -117,8 +117,8 @@
         "refer&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
+        "In_Reject_Flag",
         "In_Trasactionitem",
-        "In_Negative_Flag",
         "in_Config",
         "out_GetTextstatusupdate",
         "out_gettextstatus",
@@ -166,6 +166,40 @@
         "getTextStatus&Sequence_1",
         "int_VisibileItem&Sequence_1"
       ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Functional Test Cases/Verify_Date_WithAndWithoutUpdate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "str_getTextDate&Sequence_1",
+        "str_getTextDateUpdate&Sequence_1",
+        "Bool_Result&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Out_NavigationFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Generate_Queue_Items.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
