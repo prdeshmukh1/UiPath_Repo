@@ -1,0 +1,757 @@
+﻿{
+  "DataContractVersion": "1.1",
+  "DocumentTypes": [
+    {
+      "DocumentTypeId": "IRS.Forms.Form1040x",
+      "Group": "IRS",
+      "Category": "Forms",
+      "Name": "Form1040x",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "IRS.Forms.Form1040x.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "IRS.Forms.Form1040x.Return2019",
+          "FieldName": "Return 2019",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Return2018",
+          "FieldName": "Return 2018",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Return2017",
+          "FieldName": "Return 2017",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "2"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Return2016",
+          "FieldName": "Return 2016",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "1"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FirstName",
+          "FieldName": "First Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#c1cb22"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.LastName",
+          "FieldName": "Last Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#be90d5"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SocialSecurityNumber",
+          "FieldName": "Social Security Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1cc289"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SpousesFirstName",
+          "FieldName": "Spouses First Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#2eaad2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SpousesLastName",
+          "FieldName": "Spouses Last Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#9fa027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SpousesSocialSecurityNumber",
+          "FieldName": "Spouses Social Security Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#3d8278"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "y"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.AddressLine1",
+          "FieldName": "Address Line 1",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#54c2da"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "w"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.ApartmentNumber",
+          "FieldName": "Apartment Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6bb4f0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.PhoneNumber",
+          "FieldName": "Phone Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6dcbea"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.CityTownZip",
+          "FieldName": "City Town Zip",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e06e42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "z"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FilingStatusSingle",
+          "FieldName": "Filing Status Single",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#70727a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "j"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FilingStatusMarriedFilingJointly",
+          "FieldName": "Filing Status Married Filing Jointly",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1563ce"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FilingStatusMarriedFilingSeparately",
+          "FieldName": "Filing Status Married Filing Separately",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ca9762"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "k"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FilingStatusQualifyingWidower",
+          "FieldName": "Filing Status Qualifying Widower",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a1a899"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.FilingStatusHeadOfHousehold",
+          "FieldName": "Filing Status Head Of Household",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b188e0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "3"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Dependents",
+          "FieldName": "Dependents",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "IRS.Forms.Form1040x.Dependents.FirstLastName",
+              "FieldName": "First Last Name",
+              "IsMultiValue": false,
+              "Type": "Name",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "IRS.Forms.Form1040x.Dependents.SocialSecurityNumber",
+              "FieldName": "Social Security Number",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "IRS.Forms.Form1040x.Dependents.RelationshipToYou",
+              "FieldName": "Relationship To You",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "IRS.Forms.Form1040x.Dependents.ChildTaxCredit",
+              "FieldName": "Child Tax Credit",
+              "IsMultiValue": false,
+              "Type": "Boolean",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "IRS.Forms.Form1040x.Dependents.CreditForOtherDependents",
+              "FieldName": "Credit For Other Dependents",
+              "IsMultiValue": false,
+              "Type": "Boolean",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#157094"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "4"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Signature",
+          "FieldName": "Signature",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b4b638"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "5"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.Date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#2ee14e"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "6"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SpousesSignature",
+          "FieldName": "Spouses Signature",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e26aa4"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "7"
+            }
+          ]
+        },
+        {
+          "FieldId": "IRS.Forms.Form1040x.SpousesDate",
+          "FieldName": "Spouses Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#cfc742"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Insurance.Reports.VehicleDamageReport",
+      "Group": "Insurance",
+      "Category": "Reports",
+      "Name": "Vehicle Damage Report",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Insurance.Reports.VehicleDamageReport.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Insurance.Reports.VehicleDamageReport.RegistrationNumber",
+          "FieldName": "Registration Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ]
+        },
+        {
+          "FieldId": "Insurance.Reports.VehicleDamageReport.InspectorName",
+          "FieldName": "Inspector Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ]
+        },
+        {
+          "FieldId": "Insurance.Reports.VehicleDamageReport.VehicleLicenseNumber",
+          "FieldName": "Vehicle License Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ]
+        },
+        {
+          "FieldId": "Insurance.Reports.VehicleDamageReport.DrivingLicenseNumber",
+          "FieldName": "Driving License Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ]
+        },
+        {
+          "FieldId": "Insurance.Reports.VehicleDamageReport.CostOfDamage",
+          "FieldName": "Cost Of Damage",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#cae04a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Groups": [
+    {
+      "Name": "IRS",
+      "Categories": [
+        "Forms"
+      ]
+    },
+    {
+      "Name": "Insurance",
+      "Categories": [
+        "Reports"
+      ]
+    }
+  ],
+  "SupportedLanguages": [
+    {
+      "Name": "Undetermined Language",
+      "Code": "und"
+    },
+    {
+      "Name": "Bulgarian",
+      "Code": "bul"
+    },
+    {
+      "Name": "Cantonese",
+      "Code": "yue"
+    },
+    {
+      "Name": "Danish",
+      "Code": "dan"
+    },
+    {
+      "Name": "Dutch",
+      "Code": "nld"
+    },
+    {
+      "Name": "English",
+      "Code": "eng"
+    },
+    {
+      "Name": "French",
+      "Code": "fra"
+    },
+    {
+      "Name": "Georgian",
+      "Code": "kat"
+    },
+    {
+      "Name": "German",
+      "Code": "deu"
+    },
+    {
+      "Name": "Greek",
+      "Code": "ell"
+    },
+    {
+      "Name": "Hebrew",
+      "Code": "heb"
+    },
+    {
+      "Name": "Hindi",
+      "Code": "hin"
+    },
+    {
+      "Name": "Italian",
+      "Code": "ita"
+    },
+    {
+      "Name": "Japanese",
+      "Code": "jpn"
+    },
+    {
+      "Name": "Korean",
+      "Code": "kor"
+    },
+    {
+      "Name": "Macedonian",
+      "Code": "mkd"
+    },
+    {
+      "Name": "Mandarin",
+      "Code": "zho"
+    },
+    {
+      "Name": "Marathi",
+      "Code": "mar"
+    },
+    {
+      "Name": "Norwegian",
+      "Code": "nor"
+    },
+    {
+      "Name": "Polish",
+      "Code": "pol"
+    },
+    {
+      "Name": "Portuguese",
+      "Code": "por"
+    },
+    {
+      "Name": "Romanian",
+      "Code": "ron"
+    },
+    {
+      "Name": "Russian",
+      "Code": "rus"
+    },
+    {
+      "Name": "Serbian",
+      "Code": "srp"
+    },
+    {
+      "Name": "Spanish",
+      "Code": "spa"
+    },
+    {
+      "Name": "Swedish",
+      "Code": "swe"
+    },
+    {
+      "Name": "Telugu",
+      "Code": "tel"
+    }
+  ]
+}

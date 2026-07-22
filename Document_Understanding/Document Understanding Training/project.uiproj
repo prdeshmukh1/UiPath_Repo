@@ -1,0 +1,6 @@
+{
+  "Name": "Document Understanding Training",
+  "ProjectType": "Process",
+  "Description": "UiPath DU ILT - Simple Workflow",
+  "MainFile": "Main.xaml"
+}
