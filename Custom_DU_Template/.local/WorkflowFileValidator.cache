@@ -1,0 +1,14 @@
+Framework/EndProcess.xaml|639198609217687496
+Framework/Get_TransactionItem.xaml|639198609217912069
+Framework/Extract.xaml|639204624987521787
+Framework/ClassificationBusinessRule.xaml|639198609217528975
+Framework/SetTransactionStatus.xaml|639198609217960831
+Framework/Classify.xaml|639203451501883728
+Framework/Digitize_Document.xaml|639203443527205195
+Framework/ExportExtractionResult.xaml|639198609217687496
+Framework/Validate And Train Extractor.xaml|639203751149344700
+Framework/Validate And Train Classifier.xaml|639204615746577794
+Framework/ExtractionBusinessRuleValidation.xaml|639198609217846859
+Framework/00_ReadConfigFile.xaml|639198609217451679
+Main.xaml|639203450082458922
+TestCase_Sasmple.xaml|639204990093642576

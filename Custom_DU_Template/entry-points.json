@@ -1,0 +1,24 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7dfc169e-d7ae-4da3-a388-08c1878b8308",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_Queue": {
+            "type": "boolean"
+          },
+          "in_TargetFile": {
+            "type": "string",
+            "x-default-expression": "\"C:\\UIPATH\\UiPath_Advanced_Training_RPAVAULT\\TestData\\Invoices_Sample\\invoice-0-0.pdf\"",
+            "default": "C:\\UIPATH\\UiPath_Advanced_Training_RPAVAULT\\TestData\\Invoices_Sample\\invoice-0-0.pdf"
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}

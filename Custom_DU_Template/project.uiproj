@@ -1,0 +1,6 @@
+{
+  "Name": "Custom_DU_Template",
+  "ProjectType": "Process",
+  "Description": "In This Custom DU Template Handle Classify documents Extract Documents and Business Rule Validation ",
+  "MainFile": "Main.xaml"
+}
