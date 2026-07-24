@@ -1,0 +1,44 @@
+2026-07-24 23:12:02.735 GMT+5:30:	Info: Preparing projects for debugging...
+2026-07-24 23:12:02.746 GMT+5:30:	Info: Preparing projects for debugging completed
+2026-07-24 23:12:11.863 GMT+5:30:	Info: 8acfa97c03064449a785ec379fe8096a
+2026-07-24 23:12:13.417 GMT+5:30:	Information: Debug session is initializing
+2026-07-24 23:12:13.428 GMT+5:30:	Information: Transferring project
+2026-07-24 23:12:15.452 GMT+5:30:	Information: Download completed
+2026-07-24 23:12:15.465 GMT+5:30:	Information: Serverless environment detected; using offline NuGet fallback packages from '/nuget/ExpandedPackages'.
+2026-07-24 23:12:15.700 GMT+5:30:	Information: Restoring NuGet packages
+2026-07-24 23:12:16.159 GMT+5:30:	Information: Packages restored
+2026-07-24 23:12:16.167 GMT+5:30:	Information: Building project
+2026-07-24 23:12:16.831 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Setting up environment
+2026-07-24 23:12:16.834 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Clearing flavour-scoped cache folders in: /tmp/home/UiPath/RemoteAgent/Projects/a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb/.local
+2026-07-24 23:12:16.850 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Restoring nuget packages
+2026-07-24 23:12:17.526 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Generating JIT assemblies
+2026-07-24 23:12:17.849 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Loading assemblies with XML namespaces
+2026-07-24 23:12:17.899 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Registering activities metadata
+2026-07-24 23:12:18.018 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Update Xaml files with references to discarded entity assemblies.
+2026-07-24 23:12:18.022 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Initializing database
+2026-07-24 23:12:18.452 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Analyzing project
+2026-07-24 23:12:18.651 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Processing Forms
+2026-07-24 23:12:18.656 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Processing triggers.
+2026-07-24 23:12:18.683 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Updating project.json
+2026-07-24 23:12:18.688 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Compiling files
+2026-07-24 23:12:20.195 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Refreshing entry-point argument types
+2026-07-24 23:12:20.234 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Generating package descriptor files
+2026-07-24 23:12:20.280 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Creating build result
+2026-07-24 23:12:20.338 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb"  Execution completed
+2026-07-24 23:12:20.365 GMT+5:30:	Information: WorkflowCompiler: "a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb" finished executing in 00:00:04.179 with error code 0
+2026-07-24 23:12:20.389 GMT+5:30:	Information: Building project completed
+2026-07-24 23:12:20.852 GMT+5:30:	Information: DocumentUnderstandingModern document processing automation execution started
+2026-07-24 23:12:22.579 GMT+5:30:	Information: Processing file: InputFiles/Alkesh Manubhai.pdf
+2026-07-24 23:12:25.222 GMT+5:30:	Trace: {"activityName":"UiPath.DocumentUnderstanding.Activities.ExtractDocumentData","org":"2a53d723-00e8-4da1-9c93-c045128f7690","tenant":"4d3b085a-aae1-4085-88b4-00c3ad758e4c","user":"prasanth@emblemsystems.onmicrosoft.com","file":"/tmp/home/UiPath/RemoteAgent/Projects/a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb/Alkesh Manubhai.pdf","project":"DocumentUnderstandingModern","model":"Covid_Cert (Version: DU_ProjectVersion_Covid)","isCrossOrg":false}
+2026-07-24 23:12:59.586 GMT+5:30:	Information: Validating data
+2026-07-24 23:12:59.586 GMT+5:30:	Trace: {"activityName":"UiPath.DocumentUnderstanding.Activities.ValidateDocumentData","org":"2a53d723-00e8-4da1-9c93-c045128f7690","tenant":"4d3b085a-aae1-4085-88b4-00c3ad758e4c","user":"prasanth@emblemsystems.onmicrosoft.com","file":"/tmp/home/UiPath/RemoteAgent/Projects/a8d45ad4-ce2e-4d2c-acb4-bef56112b3eb/Alkesh Manubhai.pdf"}
+2026-07-24 23:13:01.817 GMT+5:30:	Information: Suspended at 'Validate Covid_Cert extraction' 
+2026-07-24 23:13:01.950 GMT+5:30:	Information: DocumentUnderstandingModern document processing automation execution suspended
+2026-07-24 23:13:57.136 GMT+5:30:	Information: DocumentUnderstandingModern document processing automation execution started
+2026-07-24 23:13:59.203 GMT+5:30:	Information: The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.
+ID: cfwpd7320d
+Gender: Male
+Age: 27
+Name: Dangodra Alkesh Manubhai
+
+2026-07-24 23:13:59.236 GMT+5:30:	Information: DocumentUnderstandingModern document processing automation execution ended
